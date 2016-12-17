@@ -1,0 +1,99 @@
+.proyecto{
+	position: relative;
+	width: 33%;
+	margin: 0 auto;
+	margin-top: 5%;
+	background-color: #bcbcbc;
+	box-shadow: 0px 5px 10px #888888;
+	overflow: hidden;
+}
+.proyecto:hover{
+	overflow: scroll;
+}
+@keyframes agrandar{
+	0% {width: 33%;}
+	100% {width: 70%;}
+}
+.proyecto img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.proyecto h2{
+	position: absolute;
+	top: 0;
+	color: white;
+	font-family: arial;
+	left: 15%;
+}
+.proyecto p{
+	position: absolute;
+    color: white;
+    font-family: arial;
+    left: 5%;
+    right: 5%;
+    top: 35px;
+}
+.cuerpoProjects{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    background-color: #e9e9e9;
+}
+.cajaTexto{
+	margin: 0 auto;
+	margin-top: 5%;
+	height: 80%;
+	width: 70%;
+	background-color: #bcbcbc;
+    box-shadow: 0px 5px 10px #888888;
+	color: white;
+	font-family: arial;
+	overflow: hidden;
+}
+.cajaTexto h2{
+	position: relative;
+	top: 5%;
+	left: 15%
+}
+.cajaTexto p{
+	position: relative;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	margin: 0;
+	text-align: justify;
+}
+.cajaTexto img{
+	width: 30%;
+	margin: 10px;
+}
+#cajaAbout:hover{
+	overflow: scroll;
+}
+@media only screen and (max-aspect-ratio: 1/1){
+	.proyecto{
+		width: 90%;
+	}
+	p{
+		font-size: 150%;
+	}
+	.cajaTexto{
+		height: 90%;
+	}
+}
+@media only screen and (min-aspect-ratio: 1/1){
+	.proyecto:hover{
+		animation-name: agrandar;
+		animation-duration: 1s;
+		width: 70%;
+	}
+}
+@media only screen and (max-height: 900px){
+	.contContact{
+		top: 5%;
+	}
+	.cajaTexto:hover{
+		overflow: scroll;
+	}
+}
